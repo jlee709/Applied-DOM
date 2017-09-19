@@ -1,5 +1,5 @@
 (function(window) {
-
+console.log('start');
   /*
    * Create a function named setMyLightGreen
    * which takes zero arguments
