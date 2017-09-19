@@ -137,6 +137,10 @@ function setMyLightClass(event, desiredClass){
    * to set the context to the correct object (the current context)
    */
 
+   btn6.addEventListener("click",function() {
+    setMyLightGreen.call(this);
+
+   });
 
   /*
    * Add a click event listener to btn7
