@@ -126,8 +126,8 @@ function setMyLightClass(event, desiredClass){
    * to set the context to the correct object
    *   and passing two aditional arguments, event and 'light-green'
    */
-
-
+   btn5.addEventListener('click', () => 
+    setMyLightGreen.apply(btn5, [event,'light-green']));
   /*
    * Add a click event listener to btn6
    * the handler method will be an anonymous function expression
