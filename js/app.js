@@ -111,10 +111,10 @@ function setMyLightClass(event, desiredClass){
    *   and passing two aditional arguments, event and 'light-green'
    */
   
-  btn4.addEventListener = function(event) {
-    setMyLightGreen.apply(setMyLightGreen, 'light-green');
-    console.log(btn4);
-  };
+  btn4.addEventListener('click', function(event) {
+    setMyLightGreen.apply(this, [event,'light-green' ]);
+    console.log(event);
+  });
 
   /*
    * Add a click event listener to btn5
