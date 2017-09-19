@@ -1,5 +1,7 @@
 (function(window) {
 console.log('start');
+  
+
   /*
    * Create a function named setMyLightGreen
    * which takes zero arguments
@@ -12,8 +14,15 @@ console.log('start');
    * on this dom element, set the className to 'light-green'
    */
 
+function setMyLightGreen(){
+  var lightId = this.dataset.lightId;
+  
+  document.getElementById(lightId).className = 'light-green';
 
-  /*
+}
+
+
+/*
    * Create a function named setMyLightClass
    * which takes two arguments: event, desiredClass
    * and does not return a value.
@@ -25,12 +34,34 @@ console.log('start');
    * on this dom element, set the className to the value of desiredClass
    */
 
+function setMyLightClass(event, desiredClass){
+  var lightId = this.dataset.lightId; 
+   document.getElementById(lightId).className = desiredClass;
+}
+
 
   /*
    * Declare 15 constants btn1, btn2, btn3, ...
    * use a dom element selector method to assign each const
    * to the button that has an id of the same name.
    */
+
+
+   var btn1 = document.getElementById('btn1');
+   var btn2 = document.getElementsById('btn2');
+   var btn3 = document.getElementsById('btn3');
+   var btn4 = document.getElementsById('btn4');
+   var btn5 = document.getElementsById('btn5');
+   var btn6 = document.getElementsById('btn6');
+   var btn7 = document.getElementsById('btn7');
+   var btn8 = document.getElementsById('btn8');
+   var btn9 = document.getElementsById('btn9');
+   var btn10 = document.getElementsById('btn10');
+   var btn11 = document.getElementsById('btn11');
+   var btn12 = document.getElementsById('btn12');
+   var btn13 = document.getElementsById('btn13');
+   var btn14 = document.getElementsById('btn14');
+   var btn15 = document.getElementsById('btn15');
 
 
   /*
@@ -42,6 +73,9 @@ console.log('start');
    * to set the context to the correct object (the current context)
    */
 
+   btn1.addEventListener("click",function() {
+    apply.setMyLightGreen("myBtn");
+   });
 
   /*
    * Add a click event listener to btn2
