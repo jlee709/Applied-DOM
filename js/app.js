@@ -180,7 +180,8 @@ function setMyLightClass(event, desiredClass){
    * to set the context to the correct object
    *   and passing two aditional arguments, event and 'light-green'
    */
-
+   btn9.addEventListener('click', () => 
+    setMyLightGreen.apply(btn9, [event,'light-green']));
 
   /*
    * Declare a new const named setLight10Green
