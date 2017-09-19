@@ -272,7 +272,6 @@ btn14.addEventListener('click', function(event){
     setMyLightGreen.bind(btn14)('click', [event, 'light-green']);
   });
 
-
   /*
    * Add a click event listener to btn15
    * Using just one function invocation and the Function prototype method, bind
@@ -280,6 +279,10 @@ btn14.addEventListener('click', function(event){
    *
    * Hint: Do not declare a new function expression as an event handler.
    */
+   btn15.addEventListener('click', function(){
+    setMyLightGreen.bind(btn15)();
+  });
+
 
 
 }(window));
